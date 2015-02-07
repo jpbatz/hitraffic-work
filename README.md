@@ -8,13 +8,13 @@ B = Joanne
 
 ## Work Modules:
 
-1) [A] getIncidentData - retrieve JSON data from Traffic API
+1) [A] getIncidentData - retrieves JSON data from Traffic API
 
-2) [J] processAddress - prepare valid address
+2) [J] processAddress - prepares valid address
 
-3) [J] getGeoCodes - provide valid address to Geo Code API to retrieve geo coordinates (lat=latitude, lng=longitude)
+3) [J] getGeoCodes - provides valid address to Geo Code API to retrieve geo coordinates (lat=latitude, lng=longitude)
 
-4) [A] storeIncidents - insert incidents with valid geo coordinates to PostgreSQL database
+4) [A] storeIncidents - inserts incidents with valid geo coordinates to PostgreSQL database
 
 ## API Data:
 incident_number, date, code, type, address, location, area
