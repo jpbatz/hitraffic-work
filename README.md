@@ -1,5 +1,5 @@
 # hitraffic-work
-Provide geo-coordinate date to supplement data provided by Hawaii Open Data for Traffic Incidents.  Data will be stored in a separate database to be utilized by mid and front end developers.
+"Work" will provide geo-coordinate data to supplement data provided by Hawaii Open Data for Traffic Incidents, adding the capability to plot map locations.  Data will be stored in a separate database to be utilized by mid and front end developers.
 
 ## Team Members:
 A = Andrew
@@ -56,7 +56,7 @@ Production: (TBD)
   
   area: [STRING]
   
-  geocoord: gc_index [FK]
+  geo_coord: gc_index [FK]
   
 #### table name: geo_coords
 
