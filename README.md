@@ -12,7 +12,7 @@ B = Joanne
 
 2) [J] processAddress - prepare valid address
 
-3) [J] getGeoCode - provide valid address to Geo Code API to retrieve geo coordinates (lat=latitude, lng=longitude)
+3) [J] getGeoCodes - provide valid address to Geo Code API to retrieve geo coordinates (lat=latitude, lng=longitude)
 
 4) [A] storeIncidents - insert incidents with valid geo coordinates to PostgreSQL database
 
