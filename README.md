@@ -31,19 +31,31 @@ Production: (TBD)
 database name: hitraffic (tbd)
 
 table name: incidents
+
   index: [PK, INT, AUTO]
+  
   number: [INT, over 160,000+]
+  
   date: [DATE/TIME]
+  
   code: [INT or code table?]
+  
   type: [STRING or FK to code_index?]
+  
   address: [STRING]
+  
   location: [STRING]
+  
   area: [STRING]
+  
   geocoord: gc_index [FK]
   
 table name: geo_coords
+
   gc_index: [PK, INT, AUTO]
+  
   col: lat [FLOAT]
+  
   col: lng [FLOAT]
 
 
