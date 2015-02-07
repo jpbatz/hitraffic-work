@@ -8,29 +8,36 @@ B = Joanne
 ## Work Modules:
 
 1) [A] getIncidentData - retrieve JSON data from Traffic API
+
 2) [J] processAddress - prepare valid address
+
 3) [J] getGeoCode - provide valid address to Geo Code API to retrieve geo coordinates (lat=latitude, lng=longitude)
+
 4) [A] storeIncidents - insert incidents with valid geo coordinates to PostgreSQL database
 
 ## API Data:
 incident_number, date, code, type, address, location, area
 
 Source Data: https://data.honolulu.gov/api/views/INLINE/rows.json?accessType=DOWNLOAD
+
 Notes: 2 hour delay, over 162,000+ records, dates back to Aug 2012
 
 Source Data: http://www4.honolulu.gov/hpdtraffic/
+
 Notes: Real-Time data, requires scrapping (later)
 
 Source: http://open.mapquestapi.com/geocoding/
+
 Notes: Account required (J)
 
 ## Database: PostgreSQL 9.4.1
 Notes: development using Mac OS X version
+
 Production: (TBD)
 
-database name: hitraffic (tbd)
+### database name: hitraffic (tbd)
 
-table name: incidents
+#### table name: incidents
 
   index: [PK, INT, AUTO]
   
@@ -50,7 +57,7 @@ table name: incidents
   
   geocoord: gc_index [FK]
   
-table name: geo_coords
+#### table name: geo_coords
 
   gc_index: [PK, INT, AUTO]
   
